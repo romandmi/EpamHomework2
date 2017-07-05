@@ -14,7 +14,7 @@ public class Matrix {
           INNER: for (int i = 0; i < matrix.length; i ++) {
             for (int j = 0; j < matrix[i].length; j ++ ){
 
-                summ = summ + matrix[i][j];
+                summ += matrix[i][j];
 
                 if (matrix[i][j] < 0) {
                     summ = 0;
@@ -25,7 +25,6 @@ public class Matrix {
                     System.out.println(summ);
                     summ = 0;
                 }
-
             }
         }
     }
