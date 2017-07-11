@@ -7,28 +7,29 @@ public class StringMethodsPractice {
 
     public static void main(String[] args) {
 
-        String a = "   Hello  world   ";
+        String a = " Hello  world ";
         System.out.println(a);
 
-        System.out.println(MyTrimMethod(a));
+        System.out.println(myTrimMethod(a));
         System.out.println(a.trim());
 
-        System.out.println(MyReplaceMethod(a,'l','b'));
+        System.out.println(myReplaceMethod(a,'l','b'));
         System.out.println(a.replace('l','b'));
 
     }
 
 
     public static String myTrimMethod (String s) {
-        if (s.equals("")) {
+        if (s.equals("") | s == null) {
             return "";
         }
 
         char [] chars = s.toCharArray();
 
-        for (int i = 1; i < chars.length; i++) {
+        for (int i = 0; i < chars.length; i++) {
+            //int j = 0;
             if (chars[i] == ' ') {
-                s = s.substring(i);
+                s = s.substring(1);
             }
                 if(chars[i + 1] != ' ') {
                     break;
