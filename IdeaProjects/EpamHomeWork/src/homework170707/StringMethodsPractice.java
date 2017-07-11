@@ -52,6 +52,10 @@ public class StringMethodsPractice {
     }
 
     public static String myReplaceMethod (String s, char a, char b){
+        if (s.equals("") | s == null) {
+            return "";
+        }
+
         char [] chars = s.toCharArray();
 
         for(int i = 0; i < chars.length-1; i++) {
