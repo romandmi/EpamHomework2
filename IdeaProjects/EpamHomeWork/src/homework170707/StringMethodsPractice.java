@@ -19,7 +19,7 @@ public class StringMethodsPractice {
     }
 
 
-    public static String MyTrimMethod (String s) {
+    public static String myTrimMethod (String s) {
         if (s.equals("")) {
             return "";
         }
@@ -50,7 +50,7 @@ public class StringMethodsPractice {
         return s;
     }
 
-    public static String MyReplaceMethod (String s, char a, char b){
+    public static String myReplaceMethod (String s, char a, char b){
         char [] chars = s.toCharArray();
 
         for(int i = 0; i < chars.length-1; i++) {
