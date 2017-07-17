@@ -35,5 +35,13 @@ public class SimpleUnit {
         return notEquals;
     }
 
+    public static boolean assertEquals(boolean actual, boolean expected) {
+        boolean equals = actual == expected;
+        if (!equals) {
+            System.err.println("Test failed: expected " + expected + ", but actual " + actual);
+        }
+        return equals;
+    }
+
 
 }
